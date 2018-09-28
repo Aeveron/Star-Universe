@@ -8,7 +8,9 @@ namespace ConsoleStars
     {      
         static void Main(string[] args)
         {
+            //var randomStar = RandomStar.GenerateRandomStar();
             var random = new Random();
+            var randomStarTest = random.Next(5, 52);
             var stars = new Star[]
             {
                 new Star(5, 10, 1, 2, 0),
@@ -16,25 +18,25 @@ namespace ConsoleStars
                 new Star(25, 10, 3, 0, 1),
                 new Star(52, 10, 4, -1, 0),
                 new Star(12, 5, 5, 1, 1),
-                new Star(5, 10, 1, 2, 0),
-                new Star(10, 5, 2, 1, 0),
-                new Star(25, 10, 3, 0, 1),
-                new Star(52, 10, 4, -1, 0),
-                new Star(12, 5, 5, 1, 1),
-                new Star(5, 10, 1, 2, 0),
-                new Star(10, 5, 2, 1, 0),
-                new Star(25, 10, 3, 0, 1),
-                new Star(52, 10, 4, -1, 0),
-                new Star(12, 5, 5, 1, 1),
-                new Star(5, 10, 1, 2, 0),
-                new Star(10, 5, 2, 1, 0),
-                new Star(25, 10, 3, 0, 1),
-                new Star(52, 10, 4, -1, 0),
-                new Star(12, 5, 5, 1, 1),
+                new Star(randomStarTest, randomStarTest, 1, 2, 0),
+                new Star(randomStarTest, randomStarTest, 2, 1, 0),
+                new Star(randomStarTest, randomStarTest, 3, 0, 1),
+                new Star(randomStarTest, randomStarTest, 4, -1, 0),
+                new Star(randomStarTest, randomStarTest, 5, 1, 1),
+                new Star(randomStarTest, randomStarTest, 1, 2, 0),
+                new Star(randomStarTest, randomStarTest, 2, 1, 0),
+                //new Star(randomStarTest, randomStarTest, 3, 0, 1),
+                //new Star(randomStarTest, randomStarTest, 4, -1, 0),
+                //new Star(randomStarTest, randomStarTest, 5, 1, 1),
+                //new Star(randomStarTest, randomStarTest, 1, 2, 0),
+                //new Star(randomStarTest, randomStarTest, 2, 1, 0),
+                //new Star(randomStarTest, randomStarTest, 3, 0, 1),
+                //new Star(randomStarTest, randomStarTest, 4, -1, 0),
+                //new Star(randomStarTest, randomStarTest, 5, 1, 1),
             };
             while (true)
             {
-                Console.Clear();
+                Console.Clear();     
                 foreach (var star in stars)
                 {
                     star.Show();
